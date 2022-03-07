@@ -18,7 +18,7 @@ Please do not ask me to distribute a pre patched IPA, doing so would be a copyri
 
 1. Get a deb of Rocket via cydownload (https://github.com/borishonman/cydownload/releases) or a similar tool and extract it (or alternatively get the files below from a jailbroken device that has Rocket installed)
 
-2. Put /Library/Application Support/Rocket/Rocket.bundle into the Resources folder of this repo (to Resources/Rocket.bundle/(...))
+2. Put /Library/Application Support/Rocket/Rocket.bundle into the Resources folder of this repo (to Resources/Rocket.bundle/(DateTools.bundle/MoPub.bundle/...))
 
 3. Get the rocket dylib from /usr/lib/Rocket.dylib inside the deb and open the arm64 slice in Hopper
 
