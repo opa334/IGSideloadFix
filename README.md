@@ -22,7 +22,7 @@ Please do not ask me to distribute a pre patched IPA, doing so would be a copyri
 
 3. Get the rocket dylib from /usr/lib/Rocket.dylib inside the deb and open the arm64 slice in Hopper
 
-4. Replace the first two instructions of +[RABuildManager installType] with `mov x0, #0x1; ret;` to make Rocket think it was built for sideloaded devices
+4. Replace the first two instructions of +[RABuildManager installType] with `mov x0, #0x1; ret;` to make Rocket think it was built for sideloaded installs
 
 5. Export patched binary, strip code signature when prompted
 
