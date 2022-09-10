@@ -1,4 +1,5 @@
 #import <dlfcn.h>
+#import <Foundation/Foundation.h>
 
 extern void initSideloadedFixes();
 
