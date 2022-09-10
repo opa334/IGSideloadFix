@@ -10,7 +10,7 @@ Please do not ask me to distribute a pre patched IPA, doing so would be a copyri
 
 2. Maybe change BUNDLE_ID in Makefile to something else
 
-3. Run `make package FINALPACKAGE=1` to compile an IPA that works when sideloaded, if you want to compile an unsigned ipa, run `make package FINALPACKAGE=1 CODESIGN_IPA=0`
+3. Run `make package FINALPACKAGE=1` to compile an IPA that works when sideloaded, if you want to compile an unsigned ipa, run `make package FINALPACKAGE=1 CODESIGN_IPA=0`, if you want to compile an ipa for TrollStore, run `make package FINALPACKAGE=1 TROLLSTORE=1 FAKESIGN_IPA=1` (until my theos-jailed PR has been accepted, make sure to use my fork of theos-jailed).
 
 4. Additionally, if you want to add a tweak dylib, also put the dylib into this folder and add it to Hackogram_INJECT_DYLIBS in the Makefile
 
@@ -24,7 +24,7 @@ Please do not ask me to distribute a pre patched IPA, doing so would be a copyri
 
 4. Replace the first two instructions of +[RABuildManager installType] with `mov x0, #0x1; ret;` to make Rocket think it was built for sideloaded installs
 
-5. Export patched binary, strip code signature when prompted
+5. Export patched binary, keep invalid code signature when prompted
 
 6. Put the patched Rocket dylib into the root folder of this repo
 
