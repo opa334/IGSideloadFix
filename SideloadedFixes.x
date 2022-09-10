@@ -1,4 +1,5 @@
 #import <mach-o/dyld.h>
+#import <Foundation/Foundation.h>
 
 // Make keychain accesses and application group accesses work on sideloaded Instagram
 
